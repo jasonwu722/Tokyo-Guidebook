@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Jiashu Wu">
+        <title>Submission</title>
+        <link rel="stylesheet" href="css/submission.css">
+        <link rel="stylesheet" href="css/web.css">
+        <script src="https://kit.fontawesome.com/44a594eacc.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">    
+        <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Rampart+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="main-title">
+                <a href="homepage.html"><h1>Tokyo Guidebook</h1></a>
+            </div>
+            <div class="navbar-botton">
+                <i class="fa-solid fa-bars"></i>
+                <div class="navbar">
+                    <a>FOOD</a>
+                    <a href="homepage.html">HAVE FUN</a>
+                    <a>SHOOPING</a>
+                    <a>TRAVEL</a>
+                    <a>SLIGHTS</a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <h2>Submission</h2>
+            <form>
+            <!-- form for users to submite thier articles, "requitred" means users have to fill up this input box-->
+                <div>username: <input type="text" name="username" required></div>
+                <div>email: <input type="text" name="email" required></div>
+                <div>category:<select required>
+                                    <option value="food">Food</option>
+                                    <option value="have-fun">Have Fun</option>
+                                    <option value="shopping">Shopping</option>
+                                    <option value="travel">Travel</option>
+                                    <option value="accomondation">Accomondation</option>
+                                    <option value="slights">Slights</option>
+                                </select>
+                </div>
+                <div>photo: <input type="file" name="id-photo" class="inputfile" accept="image/png" required></div>
+                <div>file: <input type="file" name="user-article" class="inputfile" accept="text/*" required></div>
+                <!-- used "accept" to make sure users upload the correct file format -->
+                <div class="upload"><button type="submit" class="user-article-submission">SUBMIT</button></div>
+                </form>
+        </main>
+        <footer>
+            <p>&copy; yoshiki</p>
+        </footer>
+    </body>
+</html>

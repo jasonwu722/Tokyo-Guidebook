@@ -1,0 +1,287 @@
+main{
+    background-color: rgb(146, 129, 122);
+    display: flex;
+}
+
+.left{
+    float: left;
+    margin-top: 6vw;
+    margin-left: 3vw;
+    width: 30%;
+}
+
+.calendar{
+    background-color: rgb(88, 31, 24);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    aspect-ratio: 1/1;
+    box-shadow: -8px 6px rgb(54, 36, 23);
+    border: solid 3px;
+    border-color: rgb(54, 36, 23);
+    box-sizing: border-box;
+}
+
+.MD{
+    font-family: "Dela Gothic One", sans-serif;
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    box-sizing: border-box;
+    height: 60%;
+    border-bottom: dashed 6px;
+    border-color: rgb(241, 218, 191);
+}
+
+.month{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    font-size: 6vw;
+    color: rgb(240, 162, 2);
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0;
+}
+
+.date{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    font-size: 5vw;
+    color: rgb(241, 136, 5);
+    margin: 0;
+    align-items: flex-end;
+}
+
+.WT{
+    font-family: "Dela Gothic One", sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+}
+
+.week{
+    font-size: 4.5vw;
+    color: rgb(217, 93, 57);
+    height: 70%;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.time{
+    color: rgb(241, 218, 191);
+    font-size: 1.8vw;
+    margin: 0;
+    height: 30%;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.submission{
+    text-align: center;
+    margin-top: 6vw;
+    width: auto;
+}
+
+.submission-button{
+    font-family: "Rampart One", sans-serif;
+    background-color: rgb(54, 36, 23);
+    border: none;
+    color: rgb(241, 218, 191);
+    padding: 3vw 3vw;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2vw;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.submission-button:hover{
+    background-color: rgb(241, 218, 191);
+    color: rgb(54, 36, 23);
+}
+
+.toparticle img{
+    overflow: hidden;
+    display: block;
+    border: solid 1vw;
+    border-radius: 2vw;
+    border-color: rgb(54, 36, 23);
+    width: 100%;
+    aspect-ratio: 3/2;
+    transition: all 0.15s ease-in-out;
+    box-sizing: border-box;
+}
+
+.toparticle a:hover img{
+    border: solid 0.8vw;
+    border-color: rgb(54, 36, 23);
+}
+
+.toparticle{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    box-sizing: border-box;
+    margin: 5%;
+}
+
+.seeall{
+    align-self: end;
+    width: fit-content;
+    margin-top: 2vw;
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 2.5vw;
+    color: rgb(54, 36, 23);
+    text-shadow: 0px 0.4vw rgb(241, 218, 191);
+}
+
+.seeall:hover {
+    color: rgb(241, 218, 191);
+    text-shadow: 0px 0.4vw rgb(54, 36, 23);
+}
+
+h3{
+    font-size: 3.5vw;
+    font-family: "Dela Gothic One", sans-serif;
+    line-height: 40px;
+    color: rgb(54, 36, 23);
+    text-align: center;
+    margin: 20px;
+    text-shadow: 0px 0.4vw rgb(241, 218, 191);
+}
+
+.whats-new h3{
+    text-shadow: -0.4vw 0.4vw rgb(241, 218, 191);
+}
+
+
+.right{
+    float: right;
+    width: 20%;
+    box-sizing: border-box;
+}
+
+.whats-new{
+    margin: 2vw 3vw 2vw 0;
+    padding-bottom: 2vw;
+    text-align: center;
+}
+
+.container{    
+    width: 100%;
+    aspect-ratio: 3/2;
+    margin: 0.8vw 0.8vw 1vw 0.8vw;
+    text-align: left;
+}
+
+.container:hover span{
+    font-size: 1.6vw;
+    border: solid 0.4vw;
+    border-color: rgb(54, 36, 23);
+    border-radius: 0 0.6vw 0.6vw 0.6vw;
+}
+
+.container:hover img{
+    border: solid 0.6vw;
+    border-color: rgb(54, 36, 23);
+}
+
+a{
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.container img{
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: solid 5px;
+    border-color: rgb(54, 36, 23);
+    object-fit: cover;
+    transition: all .15s ease-in-out;
+    border-radius: 10px 10px 10px 0;
+}
+
+.container span{
+    font-size: 1.5vw;
+    background-color: rgb(54, 36, 23);
+    font-family: "Rampart One", sans-serif;
+    border: solid 5px;
+    border-color: rgb(54, 36, 23);
+    border-radius: 0 0 10px 10px;
+    transition: 0.1s ease-in-out;
+    color: rgb(241, 218, 191);
+}
+
+@media (max-width: 768px){
+    main{
+        flex-direction: column;
+        text-align: center;
+    }
+    h3{
+        margin: 0 0 8px 0;
+        font-size: 7vw;
+    }
+    .left, .toparticle{
+        width: 90%;
+        margin: 20px auto;
+    }
+    .right{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .whats-new{
+        margin: 30px 20px;
+    }
+    .whats-new h3{
+        text-shadow: 0 0.4vw rgb(241, 218, 191);
+    }
+    .month{
+        font-size: 24vw;
+    }
+    .date{
+        font-size: 16vw;
+    }
+    .week{
+        font-size: 20vw;
+    }
+    .time{
+        font-size: 6vw;
+    }    
+    button, .submission-button{
+        width: 100%;
+        padding: 2vw 3vw;
+        font-size: 6vw;
+        border-radius: 0;
+        transition: 0.2s;
+    }
+    .container{
+        margin: 10px 0 20px 0;
+    }
+    .right span{
+        font-size: 4vw
+    }
+    .container :hover span{
+        font-size: 5vw;
+    }
+    .seeall{
+        width: 100%;
+        font-size: 5vw;
+        margin-bottom: 0;
+    }
+    .carousel {
+        width: 90vw;
+        height: 60vw; 
+    }
+    
+    .carousel nav {
+        width: 90vw;
+        height: 60vw;
+    }
+}

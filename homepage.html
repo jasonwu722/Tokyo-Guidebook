@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- for mobile device -->
+        <meta name="author" content="Jiashu Wu">
+        <title>Tokyo Guidebook</title>
+        <link rel="stylesheet" href="css/homepage.css">
+        <link rel="stylesheet" href="css/web.css">
+        <script defer src="js/canlendar.js"></script>
+        <script defer src="js/homepage.js"></script>
+        <script src="https://kit.fontawesome.com/44a594eacc.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">    
+        <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Rampart+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">    
+    </head>
+    <body>
+        <header>
+            <div class="main-title">
+                <a href="homepage.html"><h1>Tokyo Guidebook</h1></a>
+            </div>
+            <div class="navbar-botton">
+            <!-- I create a navbar for different catorgories but I didnt link them to webpages-->
+                <i class="fa-solid fa-bars"></i>
+                <div class="navbar">
+                    <a>FOOD</a>
+                    <a>HAVE FUN</a>
+                    <a>SHOOPING</a>
+                    <a>TRAVEL</a>
+                    <a>SLIGHTS</a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="left">
+                <div class="calendar">
+                <!-- a component that displays the date and time-->
+                    <div class="MD">
+                        <p class="month" id="month"></p>
+                        <p class="date" id="date"></p>
+                    </div>
+                    <div class="WT">
+                        <p class="week" id="week"></p>
+                        <p class="time" id="time">21:20:00</p>
+                    </div>
+                </div>
+                <div class="submission">
+                <!-- a button links to submission webpage -->
+                    <a href="submission.html" class="submission-button">
+                        I HAVE AN IDEA
+                    </a>
+                </div>
+            </div>
+            <div class="toparticle">
+                <h3> TOP ARTICLE </h3>
+                <a href="#" id="toparticle">
+                <!-- the main component for home page, I used JavaScript to load the image and link -->
+                    <img src="#" alt="#" id="toparticleimg">
+                </a>
+                <a href="all-articles.html" class="seeall">SEE ALL ></a>
+                <!-- a button links to all articles -->
+            </div>
+            <div class="right">
+                <div class="whats-new">
+                <!-- I set 3 container for new articles, images and links will also update automaticlly -->
+                    <h3>What's New</h3>
+                    <div class="container">
+                        <a href="#" id="container-1"></a>
+                    </div>
+                    <div class="container">
+                        <a href="#" id="container-2"></a>
+                    </div>
+                    <div class="container">
+                        <a href="#" id="container-3"></a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; yoshiki</p>
+        </footer>
+    </body>
+</html>

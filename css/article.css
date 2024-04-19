@@ -1,0 +1,145 @@
+main{
+    background-color: rgb(146, 129, 122);
+    display: flex;
+    flex-direction: column;
+}
+
+.article{
+    width: 80%;
+    border-top: dashed rgb(54, 36, 23) 0.5vw;
+    box-sizing: border-box;
+    margin: 0 auto 2vw auto;
+}
+
+main p, main .cite{
+    color: black;
+    width: 100%;
+    margin: 1vw 0;
+    padding: 0 2vw;
+    box-sizing: border-box;
+    line-height: 120%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    text-align: left;
+    font-size: 1.5vw;
+}
+
+.article-img{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    padding: 0 3vw;
+}
+
+.article-img img{
+    width: 90%;
+    display: block;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.more{
+    width: 80%;
+    margin: 0 auto 1vw auto;
+}
+
+h3{
+    font-size: 3vw;
+    font-family: "Dela Gothic One", sans-serif;
+    color: rgb(54, 36, 23);
+    margin: 0 0 1vw 0;
+    text-align: center;
+    text-shadow: 0px 6px rgb(241, 218, 191);
+}
+
+.carousel {
+    position: relative;
+    width: 45vw;
+    height: 30vw; 
+    overflow: hidden;
+    margin: auto;
+    border-radius: 2vw;
+  }
+
+.carousel-images {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    transition: left .5s ease-in-out;
+  }
+  
+.carousel-images img {
+    object-fit: cover;
+    width: 45vw;
+    height: 30vw; 
+}
+
+.carousel nav {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 2;
+    width: 45vw;
+    height: 30vw; 
+    align-items: center;
+  }
+
+  .carousel nav a {
+    text-decoration: none;
+    color: rgb(241, 218, 191);
+    font-size: 3vw;
+    padding: 0px 0.5vw;
+    transition: all .25s ease;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+  .carousel nav:hover a {
+    transition: all .25s ease;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.151);
+  }
+
+  .links {
+    font-family: "Dela Gothic One", sans-serif;
+    text-decoration: none;
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: 3vw;
+    font-size: 2vw;
+    color: rgb(241, 218, 191);
+    background-color: rgb(54, 36, 23);
+    margin: 0px;
+}
+
+@media (max-width: 768px) {
+    .article{
+        width: 90%;
+    }
+    main p, main .cite{
+        font-size: 3.5vw;
+        line-height: 150%;
+        padding: 0 2vw;
+    }
+    .article-img img{
+        width: 100%;
+    }
+    .article-img{
+        padding: 0 1vw;
+    }
+    h3{
+        font-size: 5vw;
+    }
+    .carousel, .carousel-images img, .carousel nav{
+        width: 81vw;
+        height: 54vw;
+    }
+    .links {
+        height: 5vw;
+        font-size: 3vw;
+    }
+}
