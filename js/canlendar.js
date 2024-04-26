@@ -7,6 +7,8 @@ var date = new Date()
 // get current date and time
 
 var nihonnoWeek = ["日曜日", "月曜日", "火曜日", "水曜日", "木曜日", "金曜日", "土曜日"]
+var normalWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+
 // set an array for Japanese week days
 
 function updateCanlendar(){
@@ -19,12 +21,17 @@ function updateCanlendar(){
     Week = date.getDay()
     Hour = date.getHours()
     Minutes = date.getMinutes()
-     Seconds = date.getSeconds()
+    Seconds = date.getSeconds()
 
     showmonth.innerText = Month + "月"
     showdate.innerText = Hi + "日"
-    showweek.innerText = nihonnoWeek[Week]
-    // the week will be update from Japanese week array
+    showweek.innerText = normalWeek[Week]
+    // the week will be update from normal week array
+
+    showweek.addEventListener('click', function(){
+        showweek.innerText = nihonnoWeek[Week]
+    // when click the week text, it will display the japanese style week
+    })
     showtime.innerText = alignment(Hour) + " : " + alignment(Minutes) + " : " + alignment(Seconds)
     // up date the innerText
 }

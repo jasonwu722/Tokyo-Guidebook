@@ -3,6 +3,14 @@ var next = document.getElementById('next');
 var images = document.getElementById('images');
 var links = document.getElementById('links');
 
+window.onresize = function(){
+    location.reload();
+}
+// this function is to refresh the webpage when the size was changed
+// because when web turn into mobile model, photos will not fit in carousel
+// there will be a problem when jump into next photo
+
+
 fetch('assets/articles.json').then(function(res){
 // get json resources
     res.json().then(function(json){
@@ -21,10 +29,10 @@ fetch('assets/articles.json').then(function(res){
         }
         //impelement two different function depends on webpages' size 
         if (window.innerWidth < 768){
-            carouselMobile(json)
+            carouselMobile(json);
         }
         else{
-            carousel(json)
+            carousel(json);
         }
     })
 })
